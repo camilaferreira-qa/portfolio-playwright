@@ -21,7 +21,7 @@ jobs:
       run: npx playwright test
       env:
         API_URL: ${{ secrets.API_URL }}
-    - uses: actions/upload-artifact@v4
+    - uses: actions/upload-artifact@v4g
       if: ${{ !cancelled() }}
       with:
         name: playwright-report
