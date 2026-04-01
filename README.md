@@ -15,9 +15,15 @@ This repository contains a comprehensive test automation framework built with Pl
 
 ## 📂 Test Scenarios Covered
 
-### UI Testing (Frontend)
-1. **Login Flow:** Validates successful authentication with standard credentials.
-2. **Checkout Flow (E2E):** Simulates a complete user journey: adding an item to the cart, filling out shipping information, and completing the checkout process.
+### UI / E2E Testing (Frontend)
+1. **Login Flows & Edge Cases (Data-Driven):** Validates multiple user personas (Standard, Problem, and Locked-out users) using a single test script with decision logic.
+2. **Negative Testing:** Specifically handles authentication failures, ensuring the application displays correct error messages for unauthorized access attempts.
+3. **Checkout Flow (E2E):** Complete user journey simulation: cart management, shipping information, and final checkout validation.
+
+### 📂 Test Scenarios & Architecture
+
+- **Page Object Model (POM):** Implementation of a scalable architecture by separating UI locators and page actions into dedicated classes, ensuring high maintainability.
+- **Data-Driven Approach:** Use of dynamic data arrays to execute repetitive test scenarios with different inputs, increasing test coverage while reducing code duplication.
 
 ### API Testing (Backend)
 3. **Data Integrity & Contracts:** Validates HTTP status codes (200 OK) and response body structure on public endpoints.
