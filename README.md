@@ -20,7 +20,8 @@ This repository contains a comprehensive test automation framework built with Pl
 2. **Checkout Flow (E2E):** Simulates a complete user journey: adding an item to the cart, filling out shipping information, and completing the checkout process.
 
 ### API Testing (Backend)
-3. **Data Integrity & Contracts:** Validates HTTP status codes (200 OK) and response body structure, securely executing via hidden environment variables to prevent credential leaks.
+3. **Data Integrity & Contracts:** Validates HTTP status codes (200 OK) and response body structure on public endpoints.
+4. **CRUD Operations & Authentication:** Full lifecycle management (POST, GET, DELETE) on private endpoints, handling custom authentication headers (`x-api-key`) and complex JSON payload structures.
 
 ## ⚙️ How to Run Locally
 
