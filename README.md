@@ -43,10 +43,17 @@ npm install
 ```
 
 3. **[CRITICAL STEP] Configure Environment Variables:**
-Create a `.env` file in the root directory of the project and add the required test variables. Example:
+Create a `.env` file in the root directory of the project. This file is ignored by Git for security, so you must add the following variables manually:
+
 ```env
+# Public API for basic contract testing
 API_URL=[https://jsonplaceholder.typicode.com/posts/1](https://jsonplaceholder.typicode.com/posts/1)
+
+# Private API for CRUD and Auth testing
+REQRES_URL=[https://reqres.in/api/collections/users/records?project_id=7780](https://reqres.in/api/collections/users/records?project_id=7780)
+REQRES_TOKEN=your_pro_token_here
 ```
+*Note: The `REQRES_TOKEN` is required to run the private API suite. You can obtain your own token at the ReqRes dashboard.*
 
 4. Run the tests (Headless mode):
 ```bash
