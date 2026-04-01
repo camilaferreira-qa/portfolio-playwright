@@ -19,6 +19,7 @@ This repository contains a comprehensive test automation framework built with Pl
 1. **Login Flows & Edge Cases (Data-Driven):** Validates multiple user personas (Standard, Problem, and Locked-out users) using a single test script with decision logic.
 2. **Negative Testing:** Specifically handles authentication failures, ensuring the application displays correct error messages for unauthorized access attempts.
 3. **Checkout Flow (E2E):** Complete user journey simulation: cart management, shipping information, and final checkout validation.
+4. **Network Interception & Mocking:** Demonstrates advanced network layer control by intercepting API requests to simulate server failures (Status 500) and mocking JSON payloads in real-time to validate UI resilience.
 
 ### 📂 Test Scenarios & Architecture
 
