@@ -21,6 +21,7 @@ This repository contains a comprehensive test automation framework built with Pl
 3. **Checkout Flow (E2E):** Complete user journey simulation: cart management, shipping information, and final checkout validation.
 4. **Network Interception & Mocking:** Demonstrates advanced network layer control by intercepting API requests to simulate server failures (Status 500) and mocking JSON payloads in real-time to validate UI resilience.
 5. **End-to-End Checkout Flow:** Complete user journey from login to order confirmation using POM and test hooks (beforeEach).
+6. **Financial Data Validation:** Specialized test suite for Fixed Income and FX assets, validating business rules such as price integrity, ISO currency standards, and settlement date logic.
 
 ### 📂 Test Scenarios & Architecture
 
