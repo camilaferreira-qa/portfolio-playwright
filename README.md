@@ -23,6 +23,10 @@ This repository contains a comprehensive test automation framework built with Pl
 5. **End-to-End Checkout Flow:** Complete user journey from login to order confirmation using POM and test hooks (beforeEach).
 6. **Financial Data Validation:** Specialized test suite for Fixed Income and FX assets, validating business rules such as price integrity, ISO currency standards, and settlement date logic.
 
+### Business Logic & Financial Validation
+1. **Financial Integrity Tests:** A specialized suite for Fixed Income assets that validates critical business rules (Price > 0, ISO Currency standards, and Settlement Dates).
+2. **Negative & Expected Failure Scenarios:** Implementation of `test.fail()` to document and automate the validation of corrupted data, ensuring the system correctly rejects invalid financial inputs.
+
 ### 📂 Test Scenarios & Architecture
 
 - **Page Object Model (POM):** Implementation of a scalable architecture by separating UI locators and page actions into dedicated classes, ensuring high maintainability.
